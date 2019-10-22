@@ -1,0 +1,5 @@
+HumiditéDuSol 1
+VitesseDuVent 1
+PressionAtmosphérique 1
+Température 14
+HumiditéRelativeDeLaire 3

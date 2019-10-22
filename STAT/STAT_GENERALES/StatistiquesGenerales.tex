@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+\makeatletter
+\newcommand\verbfile[1]{%
+	\begingroup
+		\let\do\@makeother\dospecials
+		\obeyspaces\obeylines\ttfamily
+		\input#1\relax
+	\endgroup
+}
+\makeatother
+
+\begin{document}
+
+{\Huge Statistique générale des capteurs\par}
+\bigbreak
+Voici les types de capteurs disponibles :
+\bigbreak
+\verbfile{../INFO_CAPTEURS/TYPE_CAPTEUR_UNIQUE.txt}
+\bigbreak
+\bigbreak
+Voici le graphique montrant le nombre de capteur en fonction de leur type:
+\includegraphics{../Stat_Generale.png}
+
+
+\end{document}
